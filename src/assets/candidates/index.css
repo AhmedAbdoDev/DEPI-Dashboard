@@ -1,0 +1,288 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.candidate-board {
+  background-color: #f8f9fa;
+}
+
+/* Column Header Background Colors */
+.column-header {
+  border-radius: 6px;
+  padding: 8px 12px !important;
+}
+
+.bg-warning-light {
+  background-color: #fff3cd !important; /* Light yellow */
+  border: 1px solid #ffc107;
+}
+
+.bg-primary-light {
+  background-color: #cfe2ff !important; /* Light blue */
+  border: 1px solid #0d6efd;
+}
+
+.bg-purple-light {
+  background-color: #e7d6ff !important; /* Light purple */
+  border: 1px solid #6f42c1;
+}
+
+.bg-success-light {
+  background-color: #d1e7dd !important; /* Light green */
+  border: 1px solid #198754;
+}
+
+.bg-danger-light {
+  background-color: #f8d7da !important; /* Light red */
+  border: 1px solid #dc3545;
+}
+
+.candidate-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background: white;
+}
+
+.candidate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.candidates-column {
+  min-height: 300px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #e9ecef;
+}
+
+.candidate-name {
+  font-size: 14px;
+}
+
+.candidate-email {
+  font-size: 12px;
+}
+
+.search-input {
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #6c757d;
+  font-weight: 500;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom: 3px solid #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.badge.bg-warning {
+  background-color: #ffc107 !important;
+  color: #000;
+}
+
+.badge.bg-primary {
+  background-color: #0d6efd !important;
+  color: #fff;
+}
+
+.badge.bg-success {
+  background-color: #198754 !important;
+  color: #fff;
+}
+
+.badge.bg-danger {
+  background-color: #dc3545 !important;
+  color: #fff;
+}
+
+.badge.bg-purple {
+  background-color: #6f42c1 !important;
+  color: #fff;
+}
+
+/* Column wrapper for better spacing */
+.column-wrapper {
+  height: 100%;
+}
+
+/* Smooth scrolling for columns */
+.candidates-column {
+  max-height: calc(100vh - 350px);
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.candidates-column::-webkit-scrollbar {
+  width: 6px;
+}
+
+.candidates-column::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.candidates-column::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.candidates-column::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mobile Responsive (Small devices - phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .candidates-column {
+    max-height: none;
+    min-height: auto;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .candidate-name {
+    font-size: 13px;
+  }
+
+  .candidate-email {
+    font-size: 11px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 13px;
+  }
+
+  .column-header {
+    padding: 6px 10px !important;
+  }
+}
+
+/* Tablet (Medium devices - tablets, 576px to 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .candidates-column {
+    max-height: 500px;
+  }
+
+  .col-sm-6 .candidates-column {
+    min-height: 400px;
+  }
+}
+
+/* Desktop (Large devices - desktops, 992px and up) */
+@media (min-width: 992px) {
+  .candidates-column {
+    max-height: calc(100vh - 300px);
+    min-height: 500px;
+  }
+}
+
+/* Extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  .candidate-card {
+    break-inside: avoid;
+  }
+
+  .candidates-column {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+
+/* Accessibility improvements */
+.btn:focus,
+.nav-link:focus,
+.form-control:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Loading state for images */
+.avatar {
+  background-color: #e9ecef;
+  background-image: linear-gradient(
+    90deg,
+    #e9ecef 25%,
+    #f8f9fa 50%,
+    #e9ecef 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.avatar[src] {
+  animation: none;
+  background-image: none;
+}
+
+/* Hover effects for better UX */
+.btn-link:hover {
+  opacity: 0.8;
+}
+
+.card-body {
+  transition: background-color 0.2s;
+}
+
+.candidate-card:hover .card-body {
+  background-color: #f8f9fa;
+}

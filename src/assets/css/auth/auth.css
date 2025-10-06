@@ -1,0 +1,15 @@
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.custom-bg-gradient {
+  background: linear-gradient(to bottom right, #fffdfa, #ffffff, #f1f5f9);
+  min-height: 100vh;
+}
+.custom-btn-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.custom-btn-hover:hover {
+  transform: scale(1.01);
+}
