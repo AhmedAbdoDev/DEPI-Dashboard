@@ -45,8 +45,13 @@ function Sidebar({ isOpen }) {
           <button className="menu-btn">
             <span className="svg">
               <FaTasks />
-            </span>{" "}
-            My Tasks
+            </span>
+            <Link
+              to="/tasks"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              My Tasks
+            </Link>
           </button>
         </li>
         <li>

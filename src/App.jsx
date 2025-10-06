@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import DashboardLayout from "./layouts/DashboardLayout";
 import PublicLayout from "./layouts/PublicLayout";
+import MyTaskPage from "./pages/myTask";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route element={<DashboardLayout />}>
         <Route path="/" element={<h1>Home Page</h1>} />
         <Route path="/candidates" element={<Candidates />} />
+        <Route path="/tasks" element={<MyTaskPage />} />
       </Route>
     </Routes>
   );
