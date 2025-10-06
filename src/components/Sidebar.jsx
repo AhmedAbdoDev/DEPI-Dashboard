@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 import "./../App.css";
+import { Link } from "react-router-dom";
 
 function Sidebar({ isOpen }) {
   return (
@@ -20,16 +21,24 @@ function Sidebar({ isOpen }) {
           <button className="menu-btn">
             <span className="svg">
               <FaTachometerAlt />
-            </span>{" "}
-            Dashboard
+            </span>
+
+            <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+              Dashboard
+            </Link>
           </button>
         </li>
         <li>
           <button className="menu-btn">
             <span className="svg">
               <FaProjectDiagram />
-            </span>{" "}
-            Projects
+            </span>
+            <Link
+              to="/candidates"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Projects
+            </Link>
           </button>
         </li>
         <li>
