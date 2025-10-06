@@ -89,6 +89,9 @@ function TaskTable() {
               <td>
                 <span
                   className={`badge bg-${task.statusColor} bg-opacity-25 text-${task.statusColor} fw-semibold px-3 py-2 rounded-pill`}
+                  style={{
+                    backgroundColor: `var(--bs-${task.statusColor}-bg-subtle) !important`,
+                  }}
                 >
                   {task.status}
                 </span>
