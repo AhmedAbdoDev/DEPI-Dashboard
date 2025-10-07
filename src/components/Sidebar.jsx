@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function Sidebar({ isOpen }) {
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <div className="logo">Monday</div>
+      <div className="logo">Dashboard</div>
 
       <ul className="menu">
         <li>
