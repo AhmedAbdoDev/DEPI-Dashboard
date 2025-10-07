@@ -93,6 +93,7 @@ body {
   border: 1px solid transparent;
   display: flex;
   gap: 20px;
+  width: 100%;
   text-decoration: none;
 }
 .add-btn {
