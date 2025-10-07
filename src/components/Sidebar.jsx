@@ -18,47 +18,34 @@ function Sidebar({ isOpen }) {
 
       <ul className="menu">
         <li>
-          <button className="menu-btn">
+          <Link to="/dashboard/" className="menu-btn" as="button">
             <span className="svg">
               <FaTachometerAlt />
             </span>
-
-            <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
-              Dashboard
-            </Link>
-          </button>
+            Dashboard
+          </Link>
         </li>
         <li>
-          <button className="menu-btn">
+          <Link to="/dashboard/candidates" className="menu-btn" as="button">
             <span className="svg">
               <FaProjectDiagram />
             </span>
-            <Link
-              to="/candidates"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              Projects
-            </Link>
-          </button>
+            Projects
+          </Link>
         </li>
         <li>
-          <button className="menu-btn">
+          <Link to="/dashboard/tasks" className="menu-btn" as="button">
             <span className="svg">
               <FaTasks />
             </span>
-            <Link
-              to="/tasks"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              My Tasks
-            </Link>
-          </button>
+            My Tasks
+          </Link>
         </li>
         <li>
           <button className="menu-btn">
             <span className="svg">
               <FaComments />
-            </span>{" "}
+            </span>
             Chats
           </button>
         </li>
@@ -66,7 +53,7 @@ function Sidebar({ isOpen }) {
           <button className="menu-btn">
             <span className="svg">
               <FaFileAlt />
-            </span>{" "}
+            </span>
             Documents
           </button>
         </li>

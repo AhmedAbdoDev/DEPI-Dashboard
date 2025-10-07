@@ -77,20 +77,23 @@ body {
 
 .menu-btn,
 .add-btn {
+  display: flex;
+  align-items: center;
   background: none;
   border: none;
-  color: #333;
+  color: #666565;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   width: 150px;
   height: auto;
   padding: 5px 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
   display: flex;
   gap: 20px;
+  text-decoration: none;
 }
 .add-btn {
   width: auto !important;
@@ -98,8 +101,9 @@ body {
 
 .menu-btn:hover,
 .add-btn:hover {
-  color: #f5f7fb;
-  background: #2563eb;
+  color: #2563eb;
+  background: #2564eb27;
+  border-color: #a3a3a3;
 }
 .proo {
   display: flex;
