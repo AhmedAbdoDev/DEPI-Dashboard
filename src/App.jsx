@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import DashboardLayout from "./layouts/DashboardLayout";
 import PublicLayout from "./layouts/PublicLayout";
-import MyTaskPage from "./pages/myTask";
+import MyTaskPage from "./pages/MyTask";
 import Hero from "./pages/Home";
 
 function App() {
